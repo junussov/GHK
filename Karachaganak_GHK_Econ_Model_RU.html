@@ -31,6 +31,7 @@
         margin-top: 2.2rem; color: var(--accent); }
   h3 { font-size: 1.0rem; color: var(--accent); margin-top: 1.8rem; }
   .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 1.5rem; }
+  .tablenote { color: var(--muted); font-size: 0.85rem; margin: -0.6rem 0 0.9rem; }
   .flag { background: var(--placeholder-bg); border: 1px solid var(--placeholder-border);
            border-radius: 4px; padding: 0.8rem 1rem; margin: 1rem 0; font-size: 0.95rem; }
   .flag b { color: var(--placeholder-border); }
@@ -60,23 +61,23 @@
 <div class="headline">
   <div class="card"><div class="n">$3,931 млн</div>
     <div class="l">Капитальные затраты, 2026$</div></div>
-  <div class="card"><div class="n">$1,055 млн/год</div>
+  <div class="card"><div class="n">$1,067 млн/год</div>
     <div class="l">Годовая выручка за первый год эксплуатации (2030$)</div></div>
-  <div class="card"><div class="n">$1,094 млн</div>
+  <div class="card"><div class="n">$1,916 млн</div>
     <div class="l">Чистый приведенный доход (NPV) при номинальной ставке дисконтирования 10%</div></div>
-  <div class="card"><div class="n">12.9%</div>
-    <div class="l">Внутренняя норма рентабельности (IRR) &mdash; срок окупаемости 6.9 лет,
-    индекс рентабельности 1.31</div></div>
+  <div class="card"><div class="n">15.0%</div>
+    <div class="l">Внутренняя норма рентабельности (IRR) &mdash; срок окупаемости 6.0 лет,
+    индекс рентабельности 1.54</div></div>
 </div>
 <div class="scroll"><table>
 <tr><th>Показатель</th><th class="num">Значение</th></tr>
 <tr><td>Капитальные затраты, 2026$</td><td class="num">3,931</td></tr>
-<tr><td>Годовая выручка за первый год эксплуатации (2030$), $ млн</td><td class="num">1,055</td></tr>
-<tr><td>Эксплуатационные расходы за первый год эксплуатации (2030$), $ млн</td><td class="num">449.2</td></tr>
-<tr><td>Чистый приведенный доход (NPV), номинальный, $ млн</td><td class="num">1,094</td></tr>
-<tr><td>Внутренняя норма рентабельности (IRR), номинальная</td><td class="num">12.9%</td></tr>
-<tr><td>Срок окупаемости, лет от начала эксплуатации</td><td class="num">6.94</td></tr>
-<tr><td>Индекс рентабельности</td><td class="num">1.31</td></tr>
+<tr><td>Годовая выручка за первый год эксплуатации (2030$), $ млн</td><td class="num">1,067</td></tr>
+<tr><td>Эксплуатационные расходы за первый год эксплуатации (2030$), $ млн</td><td class="num">345.3</td></tr>
+<tr><td>Чистый приведенный доход (NPV), номинальный, $ млн</td><td class="num">1,916</td></tr>
+<tr><td>Внутренняя норма рентабельности (IRR), номинальная</td><td class="num">15.0%</td></tr>
+<tr><td>Срок окупаемости, лет от начала эксплуатации</td><td class="num">5.96</td></tr>
+<tr><td>Индекс рентабельности</td><td class="num">1.54</td></tr>
 <tr><td>Чистый приведенный доход (NPV) без учёта стоимости сырья</td><td class="num">2,528</td></tr>
 <tr><td>Внутренняя норма рентабельности (IRR) без учёта стоимости сырья</td><td class="num">16.4%</td></tr>
 <tr><td>Период оценки</td><td class="num">2027-2059</td></tr>
@@ -98,10 +99,15 @@
 <td class="num"><b>3,930.9</b></td></tr>
 </table></div>
 
-<h2>Продуктовая линейка &mdash; объём, цена, выручка</h2>
+<h2>Продуктовая линейка &mdash; Выручка, объём, цена</h2>
+<p class="tablenote">Цены и выручка ниже приведены в текущей (2026$) основе, за
+исключением строки «Сухой кислый газ (возврат)», которая оценена напрямую по цене
+первого года эксплуатации (2030$) (см. Эксплуатационные расходы &mdash; Сырьё).
+Модель индексирует каждую строку от её базового года вперёд на 2%/год для
+построения денежного потока, показанного выше.</p>
 <div class="scroll"><table>
 <tr><th>Продукт</th><th class="num">Объём</th><th class="num">Цена</th>
-<th class="num">Годовая выручка, $ млн</th></tr>
+<th class="num">$ млн/год</th></tr>
 <tr><td>Полиэтилен</td><td class='num'>214.0 тыс.т/год</td><td class='num'>1,121 $/т</td><td class='num'>239.9</td></tr>
 <tr><td>ЭТБЭ</td><td class='num'>238.0 тыс.т/год</td><td class='num'>1,493 $/т</td><td class='num'>355.4</td></tr>
 <tr><td>Пропан автомобильный</td><td class='num'>400.0 тыс.т/год</td><td class='num'>130 $/т (59,722 ₸/т)</td><td class='num'>52.1</td></tr>
@@ -109,22 +115,27 @@
 <tr><td>Растворитель С7+</td><td class='num'>2.0 тыс.т/год</td><td class='num'>449 $/т (206,060 ₸/т)</td><td class='num'>0.9</td></tr>
 <tr><td>Бензин пиролиза</td><td class='num'>8.0 тыс.т/год</td><td class='num'>449 $/т (206,060 ₸/т)</td><td class='num'>3.6</td></tr>
 <tr><td>Природный топливный газ (экспорт)</td><td class='num'>2.521 млрд.м3/год</td><td class='num'>120.76 $/1000м3 (55,365 ₸/1000м3)</td><td class='num'>304.4</td></tr>
+<tr><td>Сухой кислый газ (возврат)</td><td class='num'>0.564 млрд.м3/год</td><td class='num'>22.00 $/1000м3 ($24.69/т)</td><td class='num'>12.4</td></tr>
 <tr><td><b>Итого</b></td><td></td><td></td>
-<td class="num"><b>974.4</b></td></tr>
+<td class="num"><b>986.8</b></td></tr>
 </table></div>
 
 <h2>Эксплуатационные расходы</h2>
+<p class="tablenote">Показатели ниже приведены в текущей (2026$) основе, за исключением
+строки «Сырьё (сырой газ)», которая оценена напрямую по цене первого года эксплуатации
+(2030$). Модель индексирует каждую строку от её базового года вперёд на
+2%/год для построения денежного потока, показанного выше.</p>
 <div class="scroll"><table>
-<tr><th>Компонент</th><th class="num">Основа расчёта</th><th class="num">$ млн/год</th></tr>
-<tr><td>Техническое обслуживание</td><td class='num'>1.5% от капзатрат</td><td class='num'>59.0</td></tr>
-<tr><td>Накладные расходы</td><td class='num'>0.5% от капзатрат</td><td class='num'>19.7</td></tr>
-<tr><td>Страхование</td><td class='num'>2.0% от капзатрат</td><td class='num'>78.6</td></tr>
-<tr><td>Местные налоги</td><td class='num'>1.0% от капзатрат</td><td class='num'>39.3</td></tr>
-<tr><td>Заработная плата</td><td class='num'>600 чел. x $25,365/год</td><td class='num'>15.2</td></tr>
-<tr><td>Сырьё (сырой газ)</td><td class='num'>4.5 млрд.м3/год x $41.66/1000м3, 2026$</td><td class='num'>187.5</td></tr>
-<tr><td>Катализаторы и химреагенты</td><td class='num'>оценка 2017г., проиндексировано на 9 лет</td><td class='num'>15.8</td></tr>
-<tr><td><b>Итого</b></td><td></td>
-<td class="num"><b>415.0</b></td></tr>
+<tr><th>Компонент</th><th class="num">Объём</th><th class="num">Основа расчёта</th><th class="num">$ млн/год</th></tr>
+<tr><td>Техническое обслуживание</td><td class='num'>&mdash;</td><td class='num'>1.5% от капзатрат</td><td class='num'>59.0</td></tr>
+<tr><td>Накладные расходы</td><td class='num'>&mdash;</td><td class='num'>0.5% от капзатрат</td><td class='num'>19.7</td></tr>
+<tr><td>Страхование</td><td class='num'>&mdash;</td><td class='num'>2.0% от капзатрат</td><td class='num'>78.6</td></tr>
+<tr><td>Местные налоги</td><td class='num'>&mdash;</td><td class='num'>1.0% от капзатрат</td><td class='num'>39.3</td></tr>
+<tr><td>Заработная плата</td><td class='num'>&mdash;</td><td class='num'>600 чел. x $25,365/год</td><td class='num'>15.2</td></tr>
+<tr><td>Сырьё (сырой газ)</td><td class='num'>4.5 млрд.м3/год</td><td class='num'>$22.00/1000м3 ($24.69/т), 2030$</td><td class='num'>99.0</td></tr>
+<tr><td>Катализаторы и химреагенты</td><td class='num'>&mdash;</td><td class='num'>оценка 2017г., проиндексировано на 9 лет</td><td class='num'>15.8</td></tr>
+<tr><td><b>Итого</b></td><td></td><td></td>
+<td class="num"><b>326.5</b></td></tr>
 </table></div>
 
 <div class="notes-link"><a href="Karachaganak_GHK_Econ_Model_Notes.html">Karachaganak_GHK_Econ_Model_Notes.html</a></div>
